@@ -1,0 +1,16 @@
+3.43.1
+1.下载源码 https://sqlite.org/2023/sqlite-preprocessed-3430100.zip
+2.VS2022中新建空白C++工程
+3.将压缩包中的源文件和头文件添加到工程中
+4.工程属性->C/C++->预处理器->预处理器定义->增加SQLITE_CORE
+5.删除geopoly.c和tclsqlite.c
+6.os_kv.c中开头的#include <sqliteInt.h>修改为#include "sqliteInt.h"
+7.build
+
+3.8.11
+1.下载源码 https://www.sqlite.org/2015/sqlite-preprocessed-3081101.zip
+2.VS2022中新建空白C++工程
+3.将压缩包中的源文件和头文件添加到工程中
+4.工程属性->C/C++->预处理器->预处理器定义->增加SQLITE_CORE
+5.tclsqlite.c
+6.build
